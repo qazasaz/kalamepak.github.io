@@ -23,6 +23,7 @@ gem 'font-awesome-rails'
 gem 'angularjs-rails'
 gem 'jquery-rails'
 gem 'paperclip', '~> 6.1'
+gem 'pg'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -40,8 +41,12 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-group :development, :test do # <<<< :development, not devlopment
-  gem 'sqlite3'
+group :development do
+   gem 'sqlite3'    #gem to use in development environment
+end
+
+group :production do
+  gem 'pg'         #gem to use in production environment
 end
 
 # Reduces boot times through caching; required in config/boot.rb
