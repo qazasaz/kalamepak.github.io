@@ -41,13 +41,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-group :development do
-   gem 'sqlite3'    #gem to use in development environment
-end
-
-group :production do
-  gem 'pg'         #gem to use in production environment
-end
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
