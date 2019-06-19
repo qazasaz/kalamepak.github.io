@@ -6,7 +6,7 @@ ruby '2.6.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -23,7 +23,7 @@ gem 'font-awesome-rails'
 gem 'angularjs-rails'
 gem 'jquery-rails'
 gem 'paperclip', '~> 6.1'
-gem 'pg'
+# gem 'pg'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -41,6 +41,13 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+group :development do
+   gem 'sqlite3'    #gem to use in development environment
+end
+
+group :production do
+  gem 'pg'         #gem to use in production environment
+end
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
