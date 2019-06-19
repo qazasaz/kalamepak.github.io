@@ -1,0 +1,19 @@
+///container-contact3 center
+.auth-box {
+  input,input {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 25px;
+  }
+}
+.theme-cyan .auth-main .btn-primary {
+  padding: 10px;
+  background: #01b2c6;
+  border-color: #01b2c6;
+}
+
+
+.auth-main:after{
+  content:'';position:absolute;right:0;
+  background:url("auth_bg.jpg") no-repeat top left fixed
+}

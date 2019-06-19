@@ -1,0 +1,38 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require font-awesome
+ *= require_tree .
+ *= require_self
+ */
+  *= require bootstrap-datepicker3.min.css
+  *= require bootstrap-markdown.min.css
+  *= require bootstrap-progressbar-3.3.4.min.css
+  *= require bootstrap-treeview.min.css
+  *= require bootstrap.min.css
+  *= require c3.min.css
+  *= require chartist.min.css
+  *= require cropper.min.css
+  *= require dataTables.bootstrap4.min.css
+  *= require dropify.min.css
+  *= require font-awesome.min.css
+  *= require fullcalendar.min.css
+  *= require jquery-jvectormap-2.0.3.min.css
+  *= require nouislider.min.css
+  *= require roundslider.min.css
+  *= require table-dragger.min.css
+  *= require toastr.min.css
+  *= require style.min.css
+  *= require morris.min.css
+  *= require main.css
+  *= require dataTables.fixedcolumns.bootstrap4.min.css
+  *= require dataTables.fixedheader.bootstrap4.min.css

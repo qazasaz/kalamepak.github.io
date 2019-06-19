@@ -1,0 +1,106 @@
+<div class="theme-cyan">
+  <div id="wrapper">
+    <!-- <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-btn">
+          <button type="button" class="btn-toggle-offcanvas">
+            <i class="lnr lnr-menu fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="navbar-brand">
+          <%# <%= link_to 'KalamEpak', root_path, style:'font-weight:bold' %> %>
+        </div>
+        <div class="navbar-right">
+          <div id="navbar-menu">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="app-inbox.html" class="icon-menu d-none d-sm-block">
+                  <i class="icon-envelope"></i>
+                  <span class="notification-dot"></span></a>
+              </li>
+              <li>
+                <%# <%= link_to destroy_user_session_path, method: :delete do %> %>
+                <i class="icon-login fa-lg" style="color:gray"></i>
+              <%# <% end %> %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+
+  <div id="left-sidebar" class="sidebar">
+    <div class="sidebar-scroll">
+      <div class="user-account">
+        <%= image_tag(current_user.avatar.url(:thumb), class: "rounded-circle user-photo", alt: "User Profile Picture") %>
+          <div class="dropdown">
+            <span>Welcome,</span><br>
+            <% @users = User.all  %>
+              <strong class="dropdown-toggle user-name" data-toggle="dropdown"><%= current_user.username %></strong>
+              <ul class="dropdown-menu dropdown-menu-right account">
+                <li><%= link_to edit_user_registration_path, class: "icon-user" do %>
+                  <i></i>My Profile
+                <%end%>
+              </li>
+              <!-- <li><a href="doctor-profile.html"><i class="icon-user"></i>My Profile</a></li> -->
+              <li>
+                <a href="app-inbox.html">
+                  <i class="icon-envelope-open"></i>Messages</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  <i class="icon-settings"></i>Settings</a>
+              </li>
+              <li class="divider"></li>
+              <li><%= link_to destroy_user_session_path, method: :delete, class: "icon-power" do %>
+                <i></i>Logout
+              <% end %>
+            </li>
+          </ul>
+        </div>
+        <hr>
+      </div>
+          <!-- Tab panes -->
+          <div class="tab-content p-l-0 p-r-0">
+            <div class="tab-pane active" id="menu">
+              <nav class="sidebar-nav">
+                <ul class="main-menu metismenu">
+                  <li><%= link_to root_path do %>
+                    <i class="icon-home"></i>
+                    <span>Dashboard</span>
+                  <% end %>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <i class="icon-wallet"></i>
+                    <span>Student List</span>
+                  </a>
+                  <ul></ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <i class="icon-user"></i>
+                    <span>Attendance</span>
+                  </a>
+                  <ul></ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <i class="icon-user-follow"></i>
+                    <span>fee Process</span>
+                  </a>
+                  <ul></ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <i class="icon-user-following"></i>
+                    <span>Books</span>
+                  </a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
